@@ -1,4 +1,4 @@
-% cv.tex
+% resume.tex
 
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.55in, top = 0.3in, bottom = 0.3in]{geometry}
@@ -8,7 +8,7 @@
 \usepackage{textcomp}
 \usepackage{amsmath}
 \usepackage{tgpagella}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -58,77 +58,63 @@
 
 \hrule
 \vspace{-0.6em}
-\subsection*{Experience}
+\subsection*{Research Experience}
 
 \renewcommand\labelitemiii{$\circ$}
 \begin{itemize}
   \parskip=0.1em
-
+  \hyphenpenalty=1000
+  
   \item
   \headerrow
-    {\textbf{Dr. Zi-Kui Liu Research Group, Penn State University}}
-    {\textbf{State College, PA}}
+    {\textbf{Phases Research Lab, Pennsylvania State University}}
+    {\textbf{University Park, PA}}
   \\
   \headerrow
-    {\emph{Graduate Research Trainee}}
+    {\emph{NSF Research Trainee (Advisor: Zi-Kui Liu)}}
     {\emph{2016 -- Present}}
   \begin{itemize*}
-    \item Developed computational tools for high-throughput ab-initio materials calculations
-    \item Used VASP to make first principles predictions for metallic alloys
-    \item Created phase diagrams from ab-initio and experimental data using the CALPHAD method
+    \item Developer of pycalphad and ESPEI, open research and education software for computational thermodynamics
+    \item Developer of atomate, a computational tool for high-throughput, first-principles DFT calculations with VASP
+    \item Mentor undergraduate students in the Women In Science and Engineering
+      Research (WISER) program
   \end{itemize*}
 
   \item
   \headerrow
-    {\textbf{Dr. Jason D. Nicholas Research Group, Michigan State University}}
+    {\textbf{NASA Jet Propulsion Lab}}
+    {\textbf{La Ca\~nada Flintridge, CA}}
+  \\
+  \headerrow
+    {\emph{Graduate Research Intern (Mentors: Richard Otis, Peter Dillon)}}
+    {\emph{05/2017 -- 08/2017}}
+  \begin{itemize*}
+    \item Used computational thermodynamics to develop bulk metallic glass alloy composition specifications
+    \item Developed a model for oxygen tolerance in bulk metallic glasses 
+  \end{itemize*}
+
+  \item
+  \headerrow
+    {\textbf{Solid State Ionics Laboratory, Michigan State University}}
     {\textbf{East Lansing, MI}}
   \\
   \headerrow
-    {\emph{Undergraduate Research Assistant}}
+    {\emph{Undergraduate Research Assistant (Advisor: Jason D. Nicholas)}}
     {\emph{2015 -- 2016}}
   \begin{itemize*}
-    \item Fabricated and tested Solid Oxide Fuel Cells 
+    \item Fabricated and improved the performance of solid oxide fuel cells
     \item Characterized fuel cells with EIS, XRD, and SEM
-    \item Developed a Python application for data analysis and visualization using Matplotlib and Tkinter
+    \item Developed Rp Plotter, a GUI-based Python application for data analysis and visualization
     \item Participated in a 10 week professional development course
   \end{itemize*}
 
   \item
   \headerrow
-    {\textbf{College of Engineering, Michigan State University}}
+    {\textbf{Composite Materials \& Structures Center, Michigan State University}}
     {\textbf{East Lansing, MI}}
   \\
   \headerrow
-    {\emph{Undergraduate Lab Mentor}}
-    {\emph{2015 -- 2016}}
-  \begin{itemize*}
-    \item EGR 100 - Introduction to Engineering Design
-    \begin{itemize}
-        \item Mentored one lab section with approximately 45 students
-        \item Aided students as they completed team projects and professional development activities
-        \item Responsible for grading projects and assignments 
-    \end{itemize}
-    \item EGR 291 - Spatial Visualization
-    \begin{itemize}
-        \item Mentored four lab sections with approximately 35 students each
-        \item Promoted learning by helping students learn to visualize and transform three-dimensional objects
-        \item Responsible for grading assignments and quizzes
-    \end{itemize}
-    \item EGR 102 - Introduction to Engineering Modeling
-    \begin{itemize}
-        \item Mentored three lab sections with approximately 30 students each
-        \item Help students learn MATLAB through individual assignments and team projects
-        \item Responsible for grading assignments and proctoring lab exams
-    \end{itemize}
-  \end{itemize*}
-
-  \item
-  \headerrow
-    {\textbf{Dr. Lawrence T. Drzal Research Group, Michigan State University}}
-    {\textbf{East Lansing, MI}}
-  \\
-  \headerrow
-    {\emph{Undergraduate Research Assistant}}
+    {\emph{Undergraduate Research Assistant (Advisor: Lawrence T. Drzal)}}
     {\emph{2014 -- 2015}}
   \begin{itemize*}
     \item Designed a graphene nanoplatlet-based capacitive deionization cell 
@@ -136,49 +122,50 @@
     \item Used Solidworks to create a 3D printed model for the deionization cell apparatus
     \item Participated in a 10 week professional development course
   \end{itemize*}
-
-  \item
-  \headerrow
-    {\textbf{Residence Education and Housing Services, Michigan State University}}
-    {\textbf{East Lansing, MI}}
-  \\
-  \headerrow
-    {\emph{Resident Assistant}}
-    {\emph{2013 -- 2014}}
-  \begin{itemize*}
-    \item Coordinated logistics and performed administrative duties for my floor community
-    \item Responded to and reported incidents in the residence hall while on duty, about two nights per week 
-    \item Planned and executed programs that promote resident support, academic success, intercultural engagement, and health and wellness
-    \item Assisted and supported residents in their learning, multicultural development, character building, community development, and well-being
-  \end{itemize*}
     
-  \item
-  \headerrow
-    {\textbf{Jetech, Inc.}}
-    {\textbf{Battle Creek, MI}}
-  \\
-  \headerrow
-    {\emph{Fabrication Assistant}}
-    {\emph{Summer 2013}}
+\end{itemize}
 
-  \item
-  \headerrow
-    {\textbf{Lakeview Youth Association}}
-    {\textbf{Battle Creek, MI}}
-  \\
-  \headerrow
-    {\emph{Little League Baseball Umpire}}
-    {\emph{Summer 2013, 2014}}
+\hrule
+\vspace{-0.6em}
+\subsection*{Teaching Experience}
 
-  \item
-  \headerrow
-    {\textbf{Irish Pub}}
-    {\textbf{Battle Creek, MI}}
-  \\
-  \headerrow
-    {\emph{Dishwasher}}
-    {\emph{2011 -- 2012}}
-   
+\renewcommand\labelitemiii{$\circ$}
+\begin{itemize}
+    \parskip=0.1em
+    
+    \item
+    \headerrow
+    {\textbf{Department of Materials Science and Engineering, Pennsylvania State University}}
+    {\textbf{University Park, PA}}
+    \\
+    \headerrow
+    {\emph{Teaching Assistant}}
+    {\emph{2017}}
+    \begin{itemize*}
+        \item MatSE 462: General Properties Laboratory in Materials
+            \begin{itemize}
+                \item Independently taught and graded assignments for two lab sections of 10 students
+                \item Instructed students on using techniques for characterizing mechanical, electrical and optical properties
+            \end{itemize}
+    \end{itemize*}
+    
+    \item
+    \headerrow
+    {\textbf{College of Engineering, Michigan State University}}
+    {\textbf{East Lansing, MI}}
+    \\
+    \headerrow
+    {\emph{Undergraduate Lab Mentor}}
+    {\emph{2015 -- 2016}}
+    \begin{itemize*}
+        \item Mentored 3 classes, interacting with over 250 students
+        \item Responsible for grading assignments and quizzes, promoting learning, and proctoring exams
+        \begin{itemize}
+            \item EGR 100: Introduction to Engineering Design
+            \item EGR 102: Introduction to Engineering Modeling
+            \item EGR 291: Spatial Visualization
+        \end{itemize}
+    \end{itemize*}
 \end{itemize}
 
 
@@ -192,15 +179,18 @@
   \item
   \headerrow
     {\textbf{Pennsylvania State University}}
-    {\textbf{State College, PA}}
+    {\textbf{University Park, PA}}
   \\
   \headerrow
     {\emph{Ph.D. Materials Science and Engineering; Graduate Minor, Computational Materials}}
     {\emph{2016 -- Present}}
   \begin{itemize*}
-    \item NSF National Research Trainee in the CoMET Program (\url{http://dftcomet.psu.edu})
+    \item 3.86 GPA
+    \item NSF Research Trainee in the CoMET Program (\href{http://dftcomet.psu.edu}{dftcomet.psu.edu})
+    \item Helen R. and Van H. Leichliter Graduate Fellowship recipient (2016)
   \end{itemize*}
-  
+
+
   \item 
   \headerrow
     {\textbf{Michigan State University}}
@@ -213,34 +203,43 @@
     \item 3.56 GPA
     \item Dean's List, 5 semesters
     \item MSU College of Engineering Endowed Opportunity Fund scholarship recipient (2015 -- 2016)
-    \item Webmaster for the Materials Science and Engineering Society (MSES) (2015 -- 2016)
-    \item Redesigned the MSES website (\url{http://egr.msu.edu/msesoc}) using HTML and CSS, conformed with MSU Brand Standards (2015)
   \end{itemize*}
 
 \end{itemize}
 
-%\hrule
-%\vspace{-0.6em}
-%\subsection*{Publications}  
-%
-%\begin{itemize}
-%  \parskip=0.1em
-%  \item temp
-%\end{itemize}
-%
 \hrule
 \vspace{-0.6em}
-\subsection*{Presentations}
+\subsection*{Publications}
 
-\begin{itemize}
-  \parskip=0.1em
+\begin{itemize*}
+\item Mathew, K., Montoya, J.H., Faghaninia, A., Dwarakanath, S., Aykol, M.,
+  Tang, H., Chu, I., Smidt, T., \textbf{Bocklund, B.}, Horton, M., Dagdelen, J., Wood, B., Liu, Z.-K., Neaton, J., Ong, S.P., Persson, K., Jain, A.
+ Atomate: A high-level interface to generate, execute,
+  and analyze computational materials science workflows. \textbf{Computational Materials Science 139, 140–152 (2017).}
+  \href{https://doi.org/10.1016/j.commatsci.2017.07.030}{doi: 10.1016/j.commatsci.2017.07.030}
 
-  \item ``Performance of A-site deficient ($\text{La}_{0.6-x}\text{Sr}_{0.4}\text{Co}_{0.8}\text{Fe}_{0.2}\text{O}_{3-\delta}, x = 0.02, 0.1, 0.25$) infiltrated nanoparticles as MIEC materials for SOFC cathodes'' (2015)
-  \item ``Graphene Membranes for Desalination of Seawater by Capacitive Deizonization'' (2014)
-  \item ``Determining Iron Content of Water: How iOS Devices Can Indicate Water Quality'' (2012)
-  \item ``Comparison of Protein Powders Using the Kjeldahl Method'' (2011)
-\end{itemize}
+\item Bobbio, L.D., \textbf{Bocklund, B.}, Otis, R, Borgonia, J.P.,
+  Dillon, R.P., Shapiro, A.A., McEnerney, B., Liu, Z.-K., Beese, A.M.
+  Characterization of a functionally graded material of Ti-6Al-4V to 304L stainless steel with an intermediate V section. \emph{Submitted.}
 
+\item Smith, N. D., Marker, C., \textbf{Bocklund, B.}, Orabona, N., Lichtenstein, T.,
+  Gesualdi, J., Nigl, T., Liu, Z.-K., Kim, H. Thermodynamic Assessment of the
+  Strontium-Antimony Binary System via Electromotive Force Measurements
+  Supported by First-Principles Calculations and CALPHAD Modeling. \emph{Submitted.}
+
+\item Bobbio, L.D., \textbf{Bocklund, B.}, Otis, R., Borgonia, J.P., Dillon, R.P., Shapiro,
+  A.A., McEnerney, Bryan, Liu, Z.-K., Beese, A.M.
+  Experimental analysis and thermodynamic calculations of an additively manufactured functionally graded material of V to Invar 36. \emph{In preparation.}
+  
+\item Marker, C., Higgins, O., Smith, N., \textbf{Bocklund, B.}, Kim, H., Liu, Z.-K.
+   Thermodynamic modeling of the Ba-Sb system from first-principles
+   calculations. \emph{In preparation.}
+
+\item \textbf{Bocklund, B.}, Otis, R. A., Egorov, A., Roslyakova, I., Liu, Z.-K.
+  ESPEI for efficient database development, modification and uncertainty
+  quantification: application to the Cu-Mg system. \emph{In preparation.}
+ 
+\end{itemize*}
 
 \hrule
 \vspace{-0.6em}
@@ -249,11 +248,12 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-  \item[Computational Tools:]
-  Python, MATLAB, \CPP, VASP, Thermo-Calc, Solidworks, VESTA, \LaTeX
-  \item[Materials Characterization Techniques:]
-  Differential Scanning Calorimetry (DSC), Electrical Impedance Spectroscopy (EIS), Hardness Analysis, Optical Microscopy, Thermal Gravimetric Analysis (TGA), Scanning Electron Microscopy (SEM), X-Ray Powder Diffraction Spectroscopy (XRD), Profilometry
-
+  \item [Software Developed:]
+  pycalphad (\href{http://pycalphad.org}{pycalphad.org}),
+  ESPEI (\href{http://espei.org}{espei.org}),
+  atomate (\href{http://hackingmaterials.github.io/atomate}{hackingmaterials.github.io/atomate})
+  \item[Computational Tools and Software:]
+  Python, MATLAB, VASP, Thermo-Calc, MongoDB
 \end{description*}
 \end{indentsection}
 \end{document}
