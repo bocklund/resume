@@ -7,12 +7,105 @@
 
 \newcommand{\confposter}[1]{\ifthenelse{\boolean{USE_CONFERENCE_POSTER}}{\item #1}{}}
 \newcommand{\confpresentation}[1]{\ifthenelse{\boolean{USE_CONFERENCE_PRESENTATION}}{\item #1}{}}
-\newcommand{\confinvited}[1]{\ifthenelse{\boolean{USE_CONFERENCE_INVITED_PRESENTATION}}{\item #1}{}}
+\newcommand{\confinvited}[1]{\ifthenelse{\boolean{USE_CONFERENCE_INVITED_PRESENTATION}}{\item Invited: #1}{}}
 
 % TODO: try to use bibliographic files here.
+% Formatting:
+% <Authors>
+% <(Year, Month)>
+% <Title>
+% <Name of conference>,
+% <Location>
+
 \begin{itemize*}
-\confposter{Hello world, conference poster 1 here}
-\confposter{Hello world, conference poster 2 here}
-\confpresentation{Powerpoint heh}
-\confinvited{LaTeX for life}
+% All presentations here should be ones that /I/ presented.
+% TODO: Submitted/accepted?
+% TODO: workshops? TMS 2018, CALPHAD 2018, CALPHAD 2019, CALPHAD 2020, IMAT 2020
+
+% MS&T 2019
+\confinvited {
+\textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu
+(2019, October).
+Automated CALPHAD modeling and uncertanty quantification of a ternary system using ESPEI.
+Materials Science and Technology 2019,
+Portland, OR.
+}
+
+% CALPHAD 2019, Noah's talk that I gave
+\confpresentation {
+N.H. Paulson, \textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu, M. Stan
+(2019, June).
+Quantified Uncertainty in CALPHAD for Materials Design.
+CALPHAD XLVIII,
+Singapore.
+}
+
+% CALPHAD 2019, Matt's poster
+\confposter {
+M. Feurer, \textbf{B. Bocklund*}, S. Shang, A. Beese, Z.-K. Liu
+(2019, June).
+High-Throughput Modeling of Cr-Fe-Ni Sigma Phase.
+CALPHAD XLVIII,
+Singapore.
+}
+
+% CALPHAD 2019, my poster
+\confposter {
+\textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu
+(2019, June).
+Automated CALPHAD modeling and uncertanty quantification of a ternary system using ESPEI.
+CALPHAD XLVIII,
+Singapore.
+}
+
+% TMS 2019
+\confpresentation{
+\textbf{B. Bocklund*}, L.D. Bobbio, R.A. Otis, S. Shang, A.M. Beese, Z.-K. Liu
+(2019, March).
+Impact of Uncertainty Quantification in Automated Calphad Modeling on the design of Additively Manufactured, Functionally-graded Alloys.
+TMS 2019 Annual Meeting,
+Phoenix, AZ.
+}
+
+% MS&T 2018
+\confpresentation {
+\textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu
+(2018, October).
+Computational Tools for the Automated Development of a Cr-Fe-ni-Ti-V CALHPAD Database.
+Materials Science and Technology 2018,
+Columbus, OH.
+}
+
+% CALPHAD 2018
+\confpresentation{
+\textbf{B. Bocklund*}, A. Egorov, A. Obaied, R.A. Otis, I. Roslayakova, Z.-K. Liu
+(2018, May).
+ESPEI for Efficient Database Development, Modification and Uncertainty Quantification.
+CALPHAD XLVII,
+Juriquilla, Mexico.
+}
+
+
+% TMS 2018
+\confpresentation{
+\textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu
+(2018, March).
+Thermodynamic Modeling with Uncertainty Quantifiation and its Implicitaions for Additive Manufacturing.
+TMS 2018 Annual Meeting,
+Phoenix, AZ.
+}
+
+% ICME 2017
+\confposter{
+\textbf{B. Bocklund*}, R.A. Otis, J. Paz Soldan-Palma, Y. Wang, Z.-K. Liu
+(2017, May).
+Automating Thermodynamic Database Development with ESPEI.
+4th World Congress on Integrated Computational Materials Engineering,
+Ypsilanti, MI.
+}
 \end{itemize*}
+
+
+\vspace{-0.6em}
+\hspace{0.5em}{\small \emph{\textbf{*} presenter}}
+\vspace{0.4em}
