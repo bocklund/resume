@@ -1,0 +1,18 @@
+% Assumes ifthen package
+% Defines 3 commands that correspond to boolean values
+%   1. \confposter        :  USE_CONFERENCE_POSTER                :  conference posters
+%   2. \confpresentation  :  USE_CONFERENCE_PRESENTATION          :  conference talks
+%   3. \confinvited       :  USE_CONFERENCE_INVITED_PRESENTATION  :  conference invited talks
+% Each command will create a new item (in an itemized environment) and spit out the text if the corresponding boolean flag is enabled.
+
+\newcommand{\confposter}[1]{\ifthenelse{\boolean{USE_CONFERENCE_POSTER}}{\item #1}{}}
+\newcommand{\confpresentation}[1]{\ifthenelse{\boolean{USE_CONFERENCE_PRESENTATION}}{\item #1}{}}
+\newcommand{\confinvited}[1]{\ifthenelse{\boolean{USE_CONFERENCE_INVITED_PRESENTATION}}{\item #1}{}}
+
+% TODO: try to use bibliographic files here.
+\begin{itemize*}
+\confposter{Hello world, conference poster 1 here}
+\confposter{Hello world, conference poster 2 here}
+\confpresentation{Powerpoint heh}
+\confinvited{LaTeX for life}
+\end{itemize*}

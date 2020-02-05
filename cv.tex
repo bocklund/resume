@@ -3,6 +3,7 @@
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.55in, top = 0.3in, bottom = 0.3in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{ifthen}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -50,6 +51,23 @@
 % make "C++" look pretty when used in text by touching up the plus signs
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+% Boolean flags for which type of conference presentations are displayed
+\newboolean{USE_CONFERENCES_SECTION}
+\newboolean{USE_CONFERENCE_POSTER}
+\newboolean{USE_CONFERENCE_PRESENTATION}
+\newboolean{USE_CONFERENCE_INVITED_PRESENTATION}
+
+% Should the conference section be used at all?
+\setboolean{USE_CONFERENCES_SECTION}{false}
+% Should posters be printed?
+\setboolean{USE_CONFERENCE_POSTER}{true}
+% Should regular talks be printed
+\setboolean{USE_CONFERENCE_PRESENTATION}{true}
+% Should invited talks be printed?
+\setboolean{USE_CONFERENCE_INVITED_PRESENTATION}{true}
+
 
 % and the actual content starts here
 \begin{document}
@@ -152,7 +170,7 @@
     {\emph{Teaching Assistant}}
     {} % right hand side text
     \begin{itemize*}
-        \item \emph{(Spring 2020)} MatSE 410: Phase Relations in Materials Systems 
+        \item \emph{(Spring 2020)} MatSE 410: Phase Relations in Materials Systems
             \begin{itemize}
                 \item Developed problem sets for homework
                 \item Graded homework and exams
@@ -328,6 +346,15 @@ Analysis of formation and growth of the $ \sigma $ phase in additively manufactu
   \href{https://doi.org/10.1016/j.commatsci.2017.07.030}{doi: 10.1016/j.commatsci.2017.07.030}
 
 \end{itemize*}
+
+
+\ifthenelse{\boolean{USE_CONFERENCES_SECTION}}{
+\hrule
+\vspace{-0.6em}
+\subsection*{Presentations}
+
+\input{conference_presentations}
+}{}
 
 \hrule
 \vspace{-0.6em}
