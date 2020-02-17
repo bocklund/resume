@@ -71,6 +71,10 @@
 % Should invited talks be printed?
 \setboolean{USE_CONFERENCE_INVITED_PRESENTATION}{true}
 
+% Boolean flag for whether technical skills should be shown
+\newboolean{USE_TECHNICAL_SKILLS}
+\setboolean{USE_TECHNICAL_SKILLS}{false}
+
 
 % and the actual content starts here
 \begin{document}
@@ -105,9 +109,14 @@
     {\emph{NASA Space Technology Research Fellow (Advisor: Zi-Kui Liu)}}
     {\emph{2016 -- Present}}
   \begin{itemize*}
-    \item Developer of pycalphad and ESPEI, open research and education software for computational thermodynamics
-    \item Developer of atomate, a computational tool for high-throughput, first-principles DFT calculations with VASP
-    \item Mentor undergraduate students in the Women In Science and Engineering
+    \item Developed uncertainty quantification methods for CALPHAD modeling
+    through development of pycalphad and ESPEI, open research and education
+    software for computational thermodynamics
+    \item Established ICME approaches for designing functionally graded, additively
+    manufactured materials
+    \item Designed methods for high-throughput first-principles DFT calculations
+    for metals and alloys
+    \item Mentored undergraduate students in the Women In Science and Engineering
       Research (WISER) program
   \end{itemize*}
 
@@ -255,7 +264,7 @@
 
   \item
   \headerrow
-       {pycalphad: Runner Up, NASA Software of the Year (SoY) award}
+       {Runner Up, NASA Software of the Year (SoY) award - \emph{pycalphad}}
        {\emph{2019}}
   \item
   \headerrow
@@ -263,7 +272,7 @@
        {\emph{2018}}
   \item
   \headerrow
-    {Outstanding Contribution in Reviewing - \emph{CALPHAD}}
+    {Outstanding Contribution in Reviewing - \emph{CALPHAD Journal}}
     {\emph{2017}}
   \item
   \headerrow
@@ -291,15 +300,21 @@
 % <Link>
 
 %%%%%%%%%%%% Submitted (no citation information) %%%%%%%%%%%%
-\item A. Obaied, \textbf{B. Bocklund}, S. Zomorodpoosh, L. Zhang, R. Otis, Z.-K. Liu, I. Roslyakova,
-  Thermodynamic re-assessment of pure chromium using modified segmented regression model,
-  \textbf{CALPHAD} \emph{Accepted} (2019).
-
 % Scheil FGMs
 \item \textbf{B. Bocklund}, L.D. Bobbio, R.A. Otis, A.M. Beese, Z.-K. Liu,
 Scheil-Gulliver simulations for the design of functionally graded alloys by additive manufacturing using pycalphad,
 \emph{Submitted}
 %\href{url}{doi:text}.
+
+% Setareh automatic weighting
+\item S. Zomorodpoosh, \textbf{B. Bocklund}, A. Obaied, R. Otis, Z.-K. Liu, I. Roslyakova,
+Statistical approach for automated weighting of datasets: Application to heat capacity data,
+\emph{Submitted}
+
+% Abdulmonem pure Cr reassessment
+\item A. Obaied, \textbf{B. Bocklund}, S. Zomorodpoosh, L. Zhang, R. Otis, Z.-K. Liu, I. Roslyakova,
+  Thermodynamic re-assessment of pure chromium using modified segmented regression model,
+  \textbf{CALPHAD} \emph{Accepted} (2019).
 
 
 %%%%%%%%%%%% 2020 %%%%%%%%%%%%
@@ -361,6 +376,7 @@ Analysis of formation and growth of the $ \sigma $ phase in additively manufactu
 
 % TODO: add organized symposia somewhere?
 
+\ifthenelse{\boolean{USE_TECHNICAL_SKILLS}}{
 \hrule
 \vspace{-0.6em}
 \subsection*{Technical Skills}
@@ -376,4 +392,7 @@ Analysis of formation and growth of the $ \sigma $ phase in additively manufactu
   Python, MATLAB, VASP, Thermo-Calc, MongoDB
 \end{description*}
 \end{indentsection}
+}
+{} % Not technical skills blank
+
 \end{document}
