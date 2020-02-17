@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{amsmath}
+\usepackage{etaremune}  % enumerate, backwards
 \usepackage{tgpagella}
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \pagestyle{empty}
@@ -74,6 +75,14 @@
 % Boolean flag for whether technical skills should be shown
 \newboolean{USE_TECHNICAL_SKILLS}
 \setboolean{USE_TECHNICAL_SKILLS}{false}
+
+% Boolean flag for whether publications are enumerated
+\newboolean{ENUMERATE_PUBLICATIONS}
+\setboolean{ENUMERATE_PUBLICATIONS}{true}
+
+% Boolean flag for whether presentations are enumerated
+\newboolean{ENUMERATE_PRESENTATIONS}
+\setboolean{ENUMERATE_PRESENTATIONS}{true}
 
 
 % and the actual content starts here
@@ -291,7 +300,9 @@
 % TODO: Break out into a separate file
 % TODO: Have some kind of highlighted flagging system where a short list could be generated with only key highlighted references.
 
-\begin{itemize*}
+\ifthenelse{\boolean{ENUMERATE_PUBLICATIONS}}
+{\begin{etaremune}}
+{\begin{itemize*}}
 
 % Formatting:
 % \item <Authors>
@@ -363,7 +374,9 @@ Analysis of formation and growth of the $ \sigma $ phase in additively manufactu
   and analyze computational materials science workflows. \textbf{Computational Materials Science} 139, 140–152 (2017).
   \href{https://doi.org/10.1016/j.commatsci.2017.07.030}{doi: 10.1016/j.commatsci.2017.07.030}
 
-\end{itemize*}
+\ifthenelse{\boolean{ENUMERATE_PUBLICATIONS}}
+{\end{etaremune}}
+{\end{itemize*}}
 
 
 \ifthenelse{\boolean{USE_CONFERENCES_SECTION}}{

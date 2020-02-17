@@ -17,7 +17,11 @@
 % <Name of conference>,
 % <Location>
 
-\begin{itemize*}
+% Reverse number publications and presentations
+\ifthenelse{\boolean{ENUMERATE_PRESENTATIONS}}
+{\begin{etaremune}}
+{\begin{itemize*}}
+
 % All presentations here should be ones that /I/ presented.
 % TODO: Submitted/accepted?
 % TODO: workshops? TMS 2018, CALPHAD 2018, CALPHAD 2019, CALPHAD 2020, IMAT 2020
@@ -114,7 +118,11 @@ Automating Thermodynamic Database Development with ESPEI.
 4th World Congress on Integrated Computational Materials Engineering,
 Ypsilanti, MI.
 }
-\end{itemize*}
+
+\ifthenelse{\boolean{ENUMERATE_PRESENTATIONS}}
+{\end{etaremune}}
+{\end{itemize*}}
+
 
 
 \vspace{-0.6em}
