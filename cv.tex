@@ -84,6 +84,11 @@
 \newboolean{ENUMERATE_PRESENTATIONS}
 \setboolean{ENUMERATE_PRESENTATIONS}{true}
 
+% Boolean flag for whether to show TAing details
+\newboolean{SHOW_TA_DETAILS}
+\setboolean{SHOW_TA_DETAILS}{false}
+
+
 
 % and the actual content starts here
 \begin{document}
@@ -153,8 +158,8 @@
   \begin{itemize*}
     \item Fabricated and improved the performance of solid oxide fuel cells
     \item Characterized fuel cells with EIS, XRD, and SEM
-    \item Developed Rp Plotter, a GUI-based Python application for data analysis and visualization
-    \item Participated in a 10 week professional development course
+%    \item Developed Rp Plotter, a GUI-based Python application for data analysis and visualization
+%    \item Participated in a 10 week professional development course
   \end{itemize*}
 
   \item
@@ -168,8 +173,8 @@
   \begin{itemize*}
     \item Designed a graphene nanoplatlet-based capacitive deionization cell
     \item Characterized graphene nanoplatelet papers using scanning electron microscopy
-    \item Used Solidworks to create a 3D printed model for the deionization cell apparatus
-    \item Participated in a 10 week professional development course
+%    \item Used Solidworks to create a 3D printed model for the deionization cell apparatus
+%    \item Participated in a 10 week professional development course
   \end{itemize*}
 
 \end{itemize}
@@ -189,22 +194,29 @@
     \\
     \headerrow
     {\emph{Teaching Assistant}}
+    {\emph{2016 -- Present}}
     {} % right hand side text
     \begin{itemize*}
         \item \emph{(Spring 2020)} MatSE 410: Phase Relations in Materials Systems
+\ifthenelse{\boolean{SHOW_TA_DETAILS}}{
             \begin{itemize}
                 \item Developed problem sets for homework
                 \item Graded homework and exams
             \end{itemize}
+}{}
         \item \emph{(Spring 2018)} MatSE 404/BME 444: Surfaces and the Biological Response to Materials
+\ifthenelse{\boolean{SHOW_TA_DETAILS}}{
             \begin{itemize}
                 \item Developed and graded problems for homework and exams
             \end{itemize}
+}{}
         \item \emph{(Spring 2017)} MatSE 462: General Properties Laboratory in Materials
+\ifthenelse{\boolean{SHOW_TA_DETAILS}}{
             \begin{itemize}
                 \item Independently taught and graded assignments for two lab sections of 10 students
                 \item Instructed students on using techniques for characterizing mechanical, electrical and optical properties
             \end{itemize}
+}{}
     \end{itemize*}
 
     \item
@@ -215,6 +227,7 @@
     \headerrow
     {\emph{Undergraduate Lab Mentor}}
     {\emph{2015 -- 2016}}
+\ifthenelse{\boolean{SHOW_TA_DETAILS}}{
     \begin{itemize*}
         \item Mentored 3 classes, interacting with over 250 students
         \item Responsible for grading assignments and quizzes, promoting learning, and proctoring exams
@@ -224,6 +237,13 @@
             \item EGR 291: Spatial Visualization
         \end{itemize}
     \end{itemize*}
+}{
+    \begin{itemize*}
+        \item \emph{(Fall 2015)} EGR 100: Introduction to Engineering Design
+        \item \emph{(Fall 2015)} EGR 291: Spatial Visualization
+        \item \emph{(Spring 2016)} EGR 102: Introduction to Engineering Modeling
+    \end{itemize*}
+}
 \end{itemize}
 
 
