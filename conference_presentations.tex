@@ -7,7 +7,7 @@
 
 \newcommand{\confposter}[1]{\ifthenelse{\boolean{USE_CONFERENCE_POSTER}}{\item #1}{}}
 \newcommand{\confpresentation}[1]{\ifthenelse{\boolean{USE_CONFERENCE_PRESENTATION}}{\item #1}{}}
-\newcommand{\confinvited}[1]{\ifthenelse{\boolean{USE_CONFERENCE_INVITED_PRESENTATION}}{\item Invited: #1}{}}
+\newcommand{\confinvited}[1]{\ifthenelse{\boolean{USE_CONFERENCE_INVITED_PRESENTATION}}{\item #1}{}}
 
 % TODO: try to use bibliographic files here.
 % Formatting:
@@ -40,7 +40,7 @@ San Diego, CA.
 % MS&T 2019
 \confinvited {
 \textbf{B. Bocklund*}, R.A. Otis, Z.-K. Liu
-(2019, October).
+(2019, October) \emph{Invited}.
 Automated CALPHAD modeling and uncertanty quantification of a ternary system using ESPEI.
 Materials Science and Technology 2019,
 Portland, OR.
