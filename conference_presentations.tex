@@ -1,9 +1,11 @@
+%!TEX root = cv.tex
 % Assumes ifthen package
 % Defines 3 commands that correspond to boolean values
 %   1. \confposter        :  USE_CONFERENCE_POSTER                :  conference posters
 %   2. \confpresentation  :  USE_CONFERENCE_PRESENTATION          :  conference talks
 %   3. \confinvited       :  USE_CONFERENCE_INVITED_PRESENTATION  :  conference invited talks
 % Each command will create a new item (in an itemized environment) and spit out the text if the corresponding boolean flag is enabled.
+% Note: ``confinvited'' is also being used for workshops since that's what I equate to the status of them
 
 \newcommand{\confposter}[1]{\ifthenelse{\boolean{USE_CONFERENCE_POSTER}}{\item #1}{}}
 \newcommand{\confpresentation}[1]{\ifthenelse{\boolean{USE_CONFERENCE_PRESENTATION}}{\item #1}{}}
