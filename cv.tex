@@ -10,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{etaremune}  % enumerate, backwards
 \usepackage{tgpagella}
+\usepackage[super]{nth}  % superscript \nth{1}
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -66,7 +67,7 @@
 % Should the conference section be used at all?
 \setboolean{USE_CONFERENCES_SECTION}{true}
 % Should posters be printed?
-\setboolean{USE_CONFERENCE_POSTER}{false}
+\setboolean{USE_CONFERENCE_POSTER}{true}
 % Should regular talks be printed
 \setboolean{USE_CONFERENCE_PRESENTATION}{true}
 % Should invited talks be printed?
@@ -101,8 +102,8 @@
 %\\
 
 
-(269) 589-8602\ \ \textbullet
-\ \ \href{mailto:bocklund@psu.edu}{bocklund@psu.edu}
+(925) 960-5631\ \ \textbullet
+\ \ \href{mailto:bocklund1@llnl.gov}{bocklund1@llnl.gov}
 \end{center}
 
 \hrule
@@ -114,6 +115,27 @@
   \parskip=0.1em
   \hyphenpenalty=1000
 
+%%%%%%%%% LLNL PD
+  \item
+  \headerrow
+    {\textbf{Materials Science Division, Lawrence Livermore National Laboratory}}
+    {\textbf{Livermore, CA}}
+  \\
+  \headerrow
+    {\emph{Postdoctoral Researcher (Supervisor: Aurélien Perron)}}
+    {\emph{2021 – Present}}
+  \begin{itemize*}
+  	\item Modeling phase transformations through atomistic, mesoscale, and machine learning techniques
+    \item Led development of Materials Acceleration Platform (MAP) used by several LLNL projects
+    \item Contributed to three successful LDRD proposals (23-ERD-005, 23-ERD-034, and 24-FS-030) and two externally funded proposals (FY24-26 NA-22 and FY24 Critical Materials Institute)
+    \item Team member for TAOS (The Alloy Optimization Software), an LLNL commercialized product
+    \item Selected to Cohort 5 of the Critical Materials Institute Leadership Academy (2024)
+    \item MSD Seminar Organizing Team member (2022 – \emph{Present})
+    \item Supervised a Materials and Chemistry Institute (MaCI) summer graduate student intern (A.M. Krajewski, 2022 and 2023)
+    \item Completed ALE3D Introductory Course (2022)
+  \end{itemize*}
+
+%%%%%%%%% PSU PRL
   \item
   \headerrow
     {\textbf{Phases Research Lab, Pennsylvania State University}}
@@ -121,7 +143,7 @@
   \\
   \headerrow
     {\emph{NASA Space Technology Research Fellow (Advisor: Zi-Kui Liu)}}
-    {\emph{2016 -- Present}}
+    {\emph{2016 – 2021}}
   \begin{itemize*}
     \item Developed uncertainty quantification methods for CALPHAD modeling
     through development of pycalphad and ESPEI, open research and education
@@ -131,12 +153,13 @@
     \item Designed methods for high-throughput first-principles DFT calculations
     for metals and alloys
     \item Co-organized and delivered two workshops on
-      \href{https://workshop.materialsgenomefoundation.org}{``Software Tools from Atomistics to Phase Diagrams''}
+      \href{https://workshop.materialsgenomefoundation.org}{"Software Tools from Atomistics to Phase Diagrams"}
       with over 140 total attendees (November 10-11, 2020 and December 8-9, 2020)
     \item Mentored undergraduate students in the Women In Science and Engineering
       Research (WISER) program
   \end{itemize*}
 
+%%%%%%%%% JPL Intern
   \item
   \headerrow
     {\textbf{NASA Jet Propulsion Lab}}
@@ -144,12 +167,13 @@
   \\
   \headerrow
     {\emph{Graduate Research Intern (Mentors: Richard Otis, Peter Dillon)}}
-    {\emph{05/2017 -- 08/2017}}
+    {\emph{05/2017 – 08/2017}}
   \begin{itemize*}
     \item Used computational thermodynamics to develop bulk metallic glass alloy composition specifications
     \item Developed a model for oxygen tolerance in bulk metallic glasses
   \end{itemize*}
 
+%%%%%%%%% MSU Nicholas Group
   \item
   \headerrow
     {\textbf{Solid State Ionics Laboratory, Michigan State University}}
@@ -157,7 +181,7 @@
   \\
   \headerrow
     {\emph{Undergraduate Research Assistant (Advisor: Jason D. Nicholas)}}
-    {\emph{2015 -- 2016}}
+    {\emph{2015 – 2016}}
   \begin{itemize*}
     \item Fabricated and improved the performance of solid oxide fuel cells
     \item Characterized fuel cells with EIS, XRD, and SEM
@@ -165,6 +189,7 @@
 %    \item Participated in a 10 week professional development course
   \end{itemize*}
 
+%%%%%%%%% MSU Drzal Group
   \item
   \headerrow
     {\textbf{Composite Materials \& Structures Center, Michigan State University}}
@@ -172,7 +197,7 @@
   \\
   \headerrow
     {\emph{Undergraduate Research Assistant (Advisor: Lawrence T. Drzal)}}
-    {\emph{2014 -- 2015}}
+    {\emph{2014 – 2015}}
   \begin{itemize*}
     \item Designed a graphene nanoplatlet-based capacitive deionization cell
     \item Characterized graphene nanoplatelet papers using scanning electron microscopy
@@ -197,7 +222,7 @@
     \\
     \headerrow
     {\emph{Teaching Assistant}}
-    {\emph{2016 -- Present}}
+    {\emph{2016 – Present}}
     {} % right hand side text
     \begin{itemize*}
         \item \emph{(Spring 2020)} MatSE 410: Phase Relations in Materials Systems
@@ -229,7 +254,7 @@
     \\
     \headerrow
     {\emph{Undergraduate Lab Mentor}}
-    {\emph{2015 -- 2016}}
+    {\emph{2015 – 2016}}
 \ifthenelse{\boolean{SHOW_TA_DETAILS}}{
     \begin{itemize*}
         \item Mentored 3 classes, interacting with over 250 students
@@ -264,11 +289,11 @@
   \\
   \headerrow
     {\emph{Ph.D., Materials Science and Engineering; Graduate Minor, Computational Materials}}
-    {\emph{2016 -- Present}}
+    {\emph{2016 – 2021}}
   \begin{itemize*}
     \item 3.74 GPA
-    \item NASA Space Technology Research Fellow (2018 -- Present)
-    \item NSF Research Trainee in the CoMET Program (\href{http://dftcomet.psu.edu}{dftcomet.psu.edu}) (2016 -- 2018)
+    \item NASA Space Technology Research Fellow (2018 – Present)
+    \item NSF Research Trainee in the CoMET Program (\href{http://dftcomet.psu.edu}{dftcomet.psu.edu}) (2016 – 2018)
   \end{itemize*}
 
 
@@ -279,7 +304,7 @@
   \\
   \headerrow
     {\emph{B.S. Materials Science and Engineering}}
-    {\emph{2012 -- 2016}}
+    {\emph{2012 – 2016}}
   \begin{itemize*}
     \item 3.56 GPA
     \item Dean's List, 5 semesters
@@ -293,6 +318,12 @@
 
 \begin{itemize}
   \parskip=0.1em
+  
+  % TODO: add paper award
+  %\#{\hypersetup{linkcolor=black}\ref{paper-award}}}
+  \item
+  \headerrow
+    {LLNL PLS FY24 Winter Directorate Award: Excellence in Publication}  {\emph{2024}}
   \item
   \headerrow
     {Robert E. Newnham Award for Research Excellence, Pennsylvania State University} {\emph{2020}}
